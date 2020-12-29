@@ -33,7 +33,7 @@
             this.radDispSensFreq = new System.Windows.Forms.RadioButton();
             this.radVelSensFreq = new System.Windows.Forms.RadioButton();
             this.radAccSensFreq = new System.Windows.Forms.RadioButton();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.GBDisplacement = new System.Windows.Forms.GroupBox();
             this.radiDisplacementPikPik = new System.Windows.Forms.RadioButton();
             this.radDisplacementPik = new System.Windows.Forms.RadioButton();
             this.radDisplacementRMS = new System.Windows.Forms.RadioButton();
@@ -42,7 +42,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.TDisplacement_dB = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.gBVelocity = new System.Windows.Forms.GroupBox();
             this.radVelocityPikPik = new System.Windows.Forms.RadioButton();
             this.radVelocityPik = new System.Windows.Forms.RadioButton();
             this.radVelocityRMS = new System.Windows.Forms.RadioButton();
@@ -51,7 +51,7 @@
             this.BVelocityCopy = new System.Windows.Forms.Button();
             this.TVelocity_dB = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.gBAcceleration = new System.Windows.Forms.GroupBox();
             this.radAccelerationPikPik = new System.Windows.Forms.RadioButton();
             this.radAccelerationPik = new System.Windows.Forms.RadioButton();
             this.radAccelerationRMS = new System.Windows.Forms.RadioButton();
@@ -80,6 +80,13 @@
             this.radVoltagePik = new System.Windows.Forms.RadioButton();
             this.radVoltageRMS = new System.Windows.Forms.RadioButton();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.channelCenter2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.channelCenter1 = new System.Windows.Forms.TextBox();
@@ -89,17 +96,12 @@
             this.channelWidth = new System.Windows.Forms.TextBox();
             this.channelCount = new System.Windows.Forms.TextBox();
             this.boundaryFrequency = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.radSensitivityMm = new System.Windows.Forms.RadioButton();
+            this.radSensitivityMkm = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox5.SuspendLayout();
+            this.GBDisplacement.SuspendLayout();
+            this.gBVelocity.SuspendLayout();
+            this.gBAcceleration.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -111,10 +113,10 @@
             this.groupBox1.Controls.Add(this.radDispSensFreq);
             this.groupBox1.Controls.Add(this.radVelSensFreq);
             this.groupBox1.Controls.Add(this.radAccSensFreq);
-            this.groupBox1.Controls.Add(this.groupBox7);
-            this.groupBox1.Controls.Add(this.groupBox6);
-            this.groupBox1.Controls.Add(this.groupBox5);
-            this.groupBox1.Location = new System.Drawing.Point(12, 101);
+            this.groupBox1.Controls.Add(this.GBDisplacement);
+            this.groupBox1.Controls.Add(this.gBVelocity);
+            this.groupBox1.Controls.Add(this.gBAcceleration);
+            this.groupBox1.Location = new System.Drawing.Point(12, 113);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(435, 266);
             this.groupBox1.TabIndex = 2;
@@ -150,22 +152,22 @@
             this.radAccSensFreq.TabStop = true;
             this.radAccSensFreq.UseVisualStyleBackColor = true;
             // 
-            // groupBox7
+            // GBDisplacement
             // 
-            this.groupBox7.Controls.Add(this.radiDisplacementPikPik);
-            this.groupBox7.Controls.Add(this.radDisplacementPik);
-            this.groupBox7.Controls.Add(this.radDisplacementRMS);
-            this.groupBox7.Controls.Add(this.TDisplacement);
-            this.groupBox7.Controls.Add(this.button5);
-            this.groupBox7.Controls.Add(this.button6);
-            this.groupBox7.Controls.Add(this.TDisplacement_dB);
-            this.groupBox7.Controls.Add(this.label10);
-            this.groupBox7.Location = new System.Drawing.Point(25, 175);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(398, 72);
-            this.groupBox7.TabIndex = 12;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Перемещение, мкм";
+            this.GBDisplacement.Controls.Add(this.radiDisplacementPikPik);
+            this.GBDisplacement.Controls.Add(this.radDisplacementPik);
+            this.GBDisplacement.Controls.Add(this.radDisplacementRMS);
+            this.GBDisplacement.Controls.Add(this.TDisplacement);
+            this.GBDisplacement.Controls.Add(this.button5);
+            this.GBDisplacement.Controls.Add(this.button6);
+            this.GBDisplacement.Controls.Add(this.TDisplacement_dB);
+            this.GBDisplacement.Controls.Add(this.label10);
+            this.GBDisplacement.Location = new System.Drawing.Point(25, 175);
+            this.GBDisplacement.Name = "GBDisplacement";
+            this.GBDisplacement.Size = new System.Drawing.Size(398, 72);
+            this.GBDisplacement.TabIndex = 12;
+            this.GBDisplacement.TabStop = false;
+            this.GBDisplacement.Text = "Перемещение, мкм";
             // 
             // radiDisplacementPikPik
             // 
@@ -251,22 +253,22 @@
             this.label10.TabIndex = 3;
             this.label10.Text = "Перемещение, дБ";
             // 
-            // groupBox6
+            // gBVelocity
             // 
-            this.groupBox6.Controls.Add(this.radVelocityPikPik);
-            this.groupBox6.Controls.Add(this.radVelocityPik);
-            this.groupBox6.Controls.Add(this.radVelocityRMS);
-            this.groupBox6.Controls.Add(this.TVelocity);
-            this.groupBox6.Controls.Add(this.BVelocity_dBCopy);
-            this.groupBox6.Controls.Add(this.BVelocityCopy);
-            this.groupBox6.Controls.Add(this.TVelocity_dB);
-            this.groupBox6.Controls.Add(this.label8);
-            this.groupBox6.Location = new System.Drawing.Point(25, 97);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(398, 72);
-            this.groupBox6.TabIndex = 12;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Скорость, мм/с";
+            this.gBVelocity.Controls.Add(this.radVelocityPikPik);
+            this.gBVelocity.Controls.Add(this.radVelocityPik);
+            this.gBVelocity.Controls.Add(this.radVelocityRMS);
+            this.gBVelocity.Controls.Add(this.TVelocity);
+            this.gBVelocity.Controls.Add(this.BVelocity_dBCopy);
+            this.gBVelocity.Controls.Add(this.BVelocityCopy);
+            this.gBVelocity.Controls.Add(this.TVelocity_dB);
+            this.gBVelocity.Controls.Add(this.label8);
+            this.gBVelocity.Location = new System.Drawing.Point(25, 97);
+            this.gBVelocity.Name = "gBVelocity";
+            this.gBVelocity.Size = new System.Drawing.Size(398, 72);
+            this.gBVelocity.TabIndex = 12;
+            this.gBVelocity.TabStop = false;
+            this.gBVelocity.Text = "Скорость, мм/с";
             // 
             // radVelocityPikPik
             // 
@@ -352,22 +354,22 @@
             this.label8.TabIndex = 3;
             this.label8.Text = "Скорость,  дБ";
             // 
-            // groupBox5
+            // gBAcceleration
             // 
-            this.groupBox5.Controls.Add(this.radAccelerationPikPik);
-            this.groupBox5.Controls.Add(this.radAccelerationPik);
-            this.groupBox5.Controls.Add(this.radAccelerationRMS);
-            this.groupBox5.Controls.Add(this.button8);
-            this.groupBox5.Controls.Add(this.BAccelerationCopy);
-            this.groupBox5.Controls.Add(this.TAcceleration);
-            this.groupBox5.Controls.Add(this.TAcceleration_dB);
-            this.groupBox5.Controls.Add(this.label4);
-            this.groupBox5.Location = new System.Drawing.Point(25, 19);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(398, 72);
-            this.groupBox5.TabIndex = 12;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Ускорение, м/с²";
+            this.gBAcceleration.Controls.Add(this.radAccelerationPikPik);
+            this.gBAcceleration.Controls.Add(this.radAccelerationPik);
+            this.gBAcceleration.Controls.Add(this.radAccelerationRMS);
+            this.gBAcceleration.Controls.Add(this.button8);
+            this.gBAcceleration.Controls.Add(this.BAccelerationCopy);
+            this.gBAcceleration.Controls.Add(this.TAcceleration);
+            this.gBAcceleration.Controls.Add(this.TAcceleration_dB);
+            this.gBAcceleration.Controls.Add(this.label4);
+            this.gBAcceleration.Location = new System.Drawing.Point(25, 19);
+            this.gBAcceleration.Name = "gBAcceleration";
+            this.gBAcceleration.Size = new System.Drawing.Size(398, 72);
+            this.gBAcceleration.TabIndex = 12;
+            this.gBAcceleration.TabStop = false;
+            this.gBAcceleration.Text = "Ускорение, м/с²";
             // 
             // radAccelerationPikPik
             // 
@@ -529,13 +531,15 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.radSensitivityMkm);
+            this.groupBox2.Controls.Add(this.radSensitivityMm);
             this.groupBox2.Controls.Add(this.BSensitivityCopy);
             this.groupBox2.Controls.Add(this.TSensitivity);
             this.groupBox2.Controls.Add(this.radSensitivityM);
             this.groupBox2.Controls.Add(this.radSensitivityG);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(225, 72);
+            this.groupBox2.Size = new System.Drawing.Size(225, 95);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "КП датчика";
@@ -563,7 +567,7 @@
             // radSensitivityM
             // 
             this.radSensitivityM.AutoSize = true;
-            this.radSensitivityM.Location = new System.Drawing.Point(88, 45);
+            this.radSensitivityM.Location = new System.Drawing.Point(31, 69);
             this.radSensitivityM.Name = "radSensitivityM";
             this.radSensitivityM.Size = new System.Drawing.Size(74, 17);
             this.radSensitivityM.TabIndex = 11;
@@ -575,7 +579,7 @@
             // 
             this.radSensitivityG.AutoSize = true;
             this.radSensitivityG.Checked = true;
-            this.radSensitivityG.Location = new System.Drawing.Point(31, 45);
+            this.radSensitivityG.Location = new System.Drawing.Point(31, 46);
             this.radSensitivityG.Name = "radSensitivityG";
             this.radSensitivityG.Size = new System.Drawing.Size(51, 17);
             this.radSensitivityG.TabIndex = 10;
@@ -690,10 +694,79 @@
             this.groupBox8.Controls.Add(this.boundaryFrequency);
             this.groupBox8.Location = new System.Drawing.Point(453, 198);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(210, 169);
+            this.groupBox8.Size = new System.Drawing.Size(210, 181);
             this.groupBox8.TabIndex = 12;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Автоспектры";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(11, 142);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(37, 13);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "F2, Гц";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 116);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(37, 13);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "F1, Гц";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(123, 139);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(76, 22);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "Копировать";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(123, 111);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(76, 22);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "Копировать";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(123, 68);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(76, 22);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "Копировать";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(123, 42);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(76, 22);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Копировать";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(123, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 22);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Копировать";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // channelCenter2
             // 
@@ -780,80 +853,33 @@
             this.boundaryFrequency.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.boundaryFrequency_KeyPress);
             this.boundaryFrequency.KeyUp += new System.Windows.Forms.KeyEventHandler(this.boundaryFrequency_KeyUp);
             // 
-            // button1
+            // radSensitivityMm
             // 
-            this.button1.Location = new System.Drawing.Point(123, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 22);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Копировать";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.radSensitivityMm.AutoSize = true;
+            this.radSensitivityMm.Location = new System.Drawing.Point(125, 46);
+            this.radSensitivityMm.Name = "radSensitivityMm";
+            this.radSensitivityMm.Size = new System.Drawing.Size(74, 17);
+            this.radSensitivityMm.TabIndex = 14;
+            this.radSensitivityMm.Text = "мВ/м•с ̄ ¹";
+            this.radSensitivityMm.UseVisualStyleBackColor = true;
+            this.radSensitivityMm.CheckedChanged += new System.EventHandler(this.radSensitivityMm_CheckedChanged);
             // 
-            // button2
+            // radSensitivityMkm
             // 
-            this.button2.Location = new System.Drawing.Point(123, 42);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(76, 22);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Копировать";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(123, 68);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(76, 22);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Копировать";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(123, 111);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(76, 22);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Копировать";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(123, 139);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(76, 22);
-            this.button7.TabIndex = 17;
-            this.button7.Text = "Копировать";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 116);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 13);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "F1, Гц";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(11, 142);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 13);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "F2, Гц";
+            this.radSensitivityMkm.AutoSize = true;
+            this.radSensitivityMkm.Location = new System.Drawing.Point(125, 69);
+            this.radSensitivityMkm.Name = "radSensitivityMkm";
+            this.radSensitivityMkm.Size = new System.Drawing.Size(67, 17);
+            this.radSensitivityMkm.TabIndex = 15;
+            this.radSensitivityMkm.Text = "мВ/мкм";
+            this.radSensitivityMkm.UseVisualStyleBackColor = true;
+            this.radSensitivityMkm.CheckedChanged += new System.EventHandler(this.radSensitivityMkm_CheckedChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 377);
+            this.ClientSize = new System.Drawing.Size(679, 420);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -868,12 +894,12 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
+            this.GBDisplacement.ResumeLayout(false);
+            this.GBDisplacement.PerformLayout();
+            this.gBVelocity.ResumeLayout(false);
+            this.gBVelocity.PerformLayout();
+            this.gBAcceleration.ResumeLayout(false);
+            this.gBAcceleration.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -923,15 +949,15 @@
         private System.Windows.Forms.RadioButton radVoltagePikPik;
         private System.Windows.Forms.RadioButton radVoltagePik;
         private System.Windows.Forms.RadioButton radVoltageRMS;
-        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox GBDisplacement;
         private System.Windows.Forms.RadioButton radiDisplacementPikPik;
         private System.Windows.Forms.RadioButton radDisplacementPik;
         private System.Windows.Forms.RadioButton radDisplacementRMS;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox gBVelocity;
         private System.Windows.Forms.RadioButton radVelocityPikPik;
         private System.Windows.Forms.RadioButton radVelocityPik;
         private System.Windows.Forms.RadioButton radVelocityRMS;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox gBAcceleration;
         private System.Windows.Forms.RadioButton radAccelerationPikPik;
         private System.Windows.Forms.RadioButton radAccelerationPik;
         private System.Windows.Forms.RadioButton radAccelerationRMS;
@@ -955,6 +981,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.RadioButton radSensitivityMkm;
+        private System.Windows.Forms.RadioButton radSensitivityMm;
     }
 }
 

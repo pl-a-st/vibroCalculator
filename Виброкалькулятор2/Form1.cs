@@ -89,9 +89,9 @@ namespace Виброкалькулятор2
                 }
                 else
                 {
-                    sensitivity = Convert.ToDouble(TSensitivity.Text)*9.807;
+                    sensitivity = Convert.ToDouble(TSensitivity.Text) * 9.807;
                 }
-                }
+            }
             catch
             { }
             try
@@ -820,6 +820,13 @@ namespace Виброкалькулятор2
             {
                 chError = sensitivity / 9.807;
                 TSensitivity.Text = Convert.ToString(Math.Round(sensitivity / 9.807,checkRound()));
+                GBDisplacement.Visible = true;
+                gBVelocity.Visible = true;
+                
+                radDispSensFreq.Visible = true;
+                radVelSensFreq.Visible = true;
+                gBVelocity.Text = "Скорость, мм/с";
+                gBAcceleration.Text = "Ускорение, м/с²";
             }
         }
 
@@ -841,6 +848,13 @@ namespace Виброкалькулятор2
             {
                 chError = sensitivity;
                 TSensitivity.Text = Convert.ToString(Math.Round(sensitivity, checkRound()));
+                GBDisplacement.Visible = true;
+                gBVelocity.Visible = true;
+
+                radDispSensFreq.Visible = true;
+                radVelSensFreq.Visible = true;
+                gBVelocity.Text = "Скорость, мм/с";
+                gBAcceleration.Text = "Ускорение, м/с²";
             }
         }
 
@@ -1157,6 +1171,45 @@ namespace Виброкалькулятор2
         private void button7_Click(object sender, EventArgs e)
         {
              Clipboard.Clear();  Clipboard.SetText(channelCenter2.Text);
+        }
+
+        private void radSensitivityMm_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radSensitivityMm.Checked)
+            {
+                chError = sensitivity / 9.807;
+                TSensitivity.Text = Convert.ToString(Math.Round(sensitivity / 9.807, checkRound()));
+                GBDisplacement.Visible = false;
+                if (radDispSensFreq.Checked)
+                {
+                    radVelSensFreq.Checked = true;
+                }
+                radDispSensFreq.Visible = false;
+                gBVelocity.Text = "Перемещение, мкм";
+                gBAcceleration.Text = "Скорость, мм/с";
+                gBVelocity.Visible = true;
+                radVelSensFreq.Visible = true;
+            }
+        }
+
+        private void radSensitivityMkm_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radSensitivityMkm.Checked)
+            {
+                chError = sensitivity / 9.807;
+                TSensitivity.Text = Convert.ToString(Math.Round(sensitivity / 9.807, checkRound()));
+
+                GBDisplacement.Visible = false;
+                gBVelocity.Visible = false;
+                if (radDispSensFreq.Checked || radVelSensFreq.Checked)
+                {
+                    radAccSensFreq.Checked = true;
+                }
+                radDispSensFreq.Visible = false;
+                radVelSensFreq.Visible = false;
+                gBAcceleration.Text = "Перемещение, мкм";
+
+            }
         }
 
         private void TFrequency_KeyDown(object sender, KeyEventArgs e)
