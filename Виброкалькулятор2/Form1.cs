@@ -1063,12 +1063,6 @@ namespace Виброкалькулятор2
         {
             strFlagType = Сalculate();
         }
-
-        private void TFrequency_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
@@ -1210,6 +1204,11 @@ namespace Виброкалькулятор2
                 gBAcceleration.Text = "Перемещение, мкм";
 
             }
+        }
+
+        private void TFrequency_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void TFrequency_KeyDown(object sender, KeyEventArgs e)
