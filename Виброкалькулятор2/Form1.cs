@@ -314,8 +314,7 @@ namespace Виброкалькулятор2
                     if(radVoltageRMS.Checked)
                     {
                         chError = voltage;
-                        voltage = Math.Round(voltage, checkRound());
-                        TVoltage.Text = Convert.ToString(voltage);
+                        TVoltage.Text = Convert.ToString(Math.Round(voltage, checkRound()));
                     }
                     else
                     {
@@ -342,8 +341,8 @@ namespace Виброкалькулятор2
                 {
                     voltage_db = 20 * Math.Log10(voltage/1000 / Math.Pow(10, -6));
                     chError = voltage_db;
-                    voltage_db = Math.Round(voltage_db, checkRound());
-                    TVoltage_dB.Text = Convert.ToString(voltage_db);
+                    //voltage_db = ;
+                    TVoltage_dB.Text = Convert.ToString(Math.Round(voltage_db, checkRound()));
                 }
                 catch
                 { TVoltage_dB.Text = "нет данных"; }
@@ -359,8 +358,8 @@ namespace Виброкалькулятор2
                     if (radAccelerationRMS.Checked)
                     {
                         chError = acceleration;
-                        acceleration = Math.Round(acceleration, checkRound());
-                        TAcceleration.Text = Convert.ToString(acceleration);
+                        //acceleration = ;
+                        TAcceleration.Text = Convert.ToString(Math.Round(acceleration, checkRound()));
                     }
                     else
                     {
@@ -386,8 +385,8 @@ namespace Виброкалькулятор2
                 {
                     acceleration_dB = 20 * Math.Log10(voltage * 9.807 / sensitivity / Math.Pow(10, -6));
                     chError = acceleration_dB;
-                    acceleration_dB = Math.Round(acceleration_dB, checkRound());
-                    TAcceleration_dB.Text = Convert.ToString(acceleration_dB);
+                    //acceleration_dB = ;
+                    TAcceleration_dB.Text = Convert.ToString(Math.Round(acceleration_dB, checkRound()));
                 }
                 catch
                 { TAcceleration_dB.Text = "нет данных"; }
@@ -434,8 +433,8 @@ namespace Виброкалькулятор2
                     velocity_dB = 20 * Math.Log10(voltage * 9.807 / sensitivity / 2 / Math.PI / frequency *
                 Math.Pow(10, 3) / Math.Pow(10, -6));
                     chError = velocity_dB;
-                    velocity_dB = Math.Round(velocity_dB, checkRound());
-                    TVelocity_dB.Text = Convert.ToString(velocity_dB);
+                    //velocity_dB = ;
+                    TVelocity_dB.Text = Convert.ToString(Math.Round(velocity_dB, checkRound()));
                 }
                 catch
                 { TVelocity_dB.Text = "нет данных"; }
@@ -479,8 +478,8 @@ namespace Виброкалькулятор2
                     displacement_dB = 20 * Math.Log10(voltage * 9.807 / sensitivity / 4 / Math.PI / frequency
                 / Math.PI / frequency * Math.Pow(10, 6) / Math.Pow(10, -6));
                     chError = displacement_dB;
-                    displacement_dB = Math.Round(displacement_dB, checkRound());
-                    TDisplacement_dB.Text = Convert.ToString(displacement_dB);
+                    //displacement_dB = ;
+                    TDisplacement_dB.Text = Convert.ToString(Math.Round(displacement_dB, checkRound()));
                 }
                 catch
                 { TDisplacement_dB.Text = "нет данных"; }
@@ -1063,6 +1062,12 @@ namespace Виброкалькулятор2
         {
             strFlagType = Сalculate();
         }
+
+        private void TFrequency_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
@@ -1206,8 +1211,7 @@ namespace Виброкалькулятор2
             }
         }
 
-        private void TFrequency_TextChanged(object sender, EventArgs e)
-        {
+        private void TDisplacement_TextChanged(object sender, EventArgs e) {
 
         }
 
