@@ -209,7 +209,8 @@
             this.TDisplacement.Location = new System.Drawing.Point(6, 19);
             this.TDisplacement.Name = "TDisplacement";
             this.TDisplacement.Size = new System.Drawing.Size(86, 20);
-            this.TDisplacement.TabIndex = 9;
+            this.TDisplacement.TabIndex = 7;
+            this.TDisplacement.TextChanged += new System.EventHandler(this.TDisplacement_TextChanged);
             this.TDisplacement.Enter += new System.EventHandler(this.TDisplacement_Enter);
             this.TDisplacement.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TDisplacement_KeyPress);
             this.TDisplacement.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TDisplacement_KeyUp);
@@ -239,7 +240,7 @@
             this.TDisplacement_dB.Location = new System.Drawing.Point(210, 21);
             this.TDisplacement_dB.Name = "TDisplacement_dB";
             this.TDisplacement_dB.Size = new System.Drawing.Size(89, 20);
-            this.TDisplacement_dB.TabIndex = 10;
+            this.TDisplacement_dB.TabIndex = 7;
             this.TDisplacement_dB.Enter += new System.EventHandler(this.TDisplacement_dB_Enter);
             this.TDisplacement_dB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TDisplacement_dB_KeyPress);
             this.TDisplacement_dB.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TDisplacement_dB_KeyUp);
@@ -340,7 +341,7 @@
             this.TVelocity_dB.Location = new System.Drawing.Point(210, 19);
             this.TVelocity_dB.Name = "TVelocity_dB";
             this.TVelocity_dB.Size = new System.Drawing.Size(89, 20);
-            this.TVelocity_dB.TabIndex = 8;
+            this.TVelocity_dB.TabIndex = 7;
             this.TVelocity_dB.Enter += new System.EventHandler(this.Tvelocity_dB_Enter);
             this.TVelocity_dB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Tvelocity_dB_KeyPress);
             this.TVelocity_dB.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TVelocity_dB_KeyUp);
@@ -431,7 +432,7 @@
             this.TAcceleration.Location = new System.Drawing.Point(6, 19);
             this.TAcceleration.Name = "TAcceleration";
             this.TAcceleration.Size = new System.Drawing.Size(86, 20);
-            this.TAcceleration.TabIndex = 5;
+            this.TAcceleration.TabIndex = 7;
             this.TAcceleration.TextChanged += new System.EventHandler(this.TAcceleration_TextChanged);
             this.TAcceleration.Enter += new System.EventHandler(this.TAcceleration_Enter);
             this.TAcceleration.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TAcceleration_KeyPress);
@@ -442,7 +443,7 @@
             this.TAcceleration_dB.Location = new System.Drawing.Point(210, 19);
             this.TAcceleration_dB.Name = "TAcceleration_dB";
             this.TAcceleration_dB.Size = new System.Drawing.Size(89, 20);
-            this.TAcceleration_dB.TabIndex = 6;
+            this.TAcceleration_dB.TabIndex = 7;
             this.TAcceleration_dB.TextChanged += new System.EventHandler(this.TAcceleration_dB_TextChanged);
             this.TAcceleration_dB.Enter += new System.EventHandler(this.TAcceleration_dB_Enter);
             this.TAcceleration_dB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TAcceleration_dB_KeyPress);
@@ -460,7 +461,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(456, 132);
+            this.label6.Location = new System.Drawing.Point(456, 146);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 13);
             this.label6.TabIndex = 3;
@@ -471,7 +472,7 @@
             this.TFrequency.Location = new System.Drawing.Point(6, 19);
             this.TFrequency.Name = "TFrequency";
             this.TFrequency.Size = new System.Drawing.Size(89, 20);
-            this.TFrequency.TabIndex = 1;
+            this.TFrequency.TabIndex = 7;
             this.TFrequency.Text = "159,2";
             this.TFrequency.TextChanged += new System.EventHandler(this.TFrequency_TextChanged);
             this.TFrequency.Enter += new System.EventHandler(this.TFrequency_Enter);
@@ -483,7 +484,7 @@
             this.TVoltage.Location = new System.Drawing.Point(6, 19);
             this.TVoltage.Name = "TVoltage";
             this.TVoltage.Size = new System.Drawing.Size(90, 20);
-            this.TVoltage.TabIndex = 3;
+            this.TVoltage.TabIndex = 7;
             this.TVoltage.Text = "100";
             this.TVoltage.Enter += new System.EventHandler(this.TVoltage_Enter);
             this.TVoltage.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TVoltage_KeyPress);
@@ -491,10 +492,10 @@
             // 
             // TVoltage_dB
             // 
-            this.TVoltage_dB.Location = new System.Drawing.Point(459, 148);
+            this.TVoltage_dB.Location = new System.Drawing.Point(459, 162);
             this.TVoltage_dB.Name = "TVoltage_dB";
             this.TVoltage_dB.Size = new System.Drawing.Size(90, 20);
-            this.TVoltage_dB.TabIndex = 4;
+            this.TVoltage_dB.TabIndex = 7;
             this.TVoltage_dB.Enter += new System.EventHandler(this.TVoltage_dB_Enter);
             this.TVoltage_dB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TVoltage_dB_KeyPress);
             this.TVoltage_dB.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TVoltage_dB_KeyUp);
@@ -505,7 +506,6 @@
             this.BFrequencyCopy.Name = "BFrequencyCopy";
             this.BFrequencyCopy.Size = new System.Drawing.Size(76, 22);
             this.BFrequencyCopy.TabIndex = 8;
-            this.BFrequencyCopy.TabStop = false;
             this.BFrequencyCopy.Text = "Копировать";
             this.BFrequencyCopy.UseVisualStyleBackColor = true;
             this.BFrequencyCopy.Click += new System.EventHandler(this.BFrequencyCopy_Click);
@@ -522,7 +522,7 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(555, 146);
+            this.button10.Location = new System.Drawing.Point(555, 160);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(76, 22);
             this.button10.TabIndex = 8;
@@ -541,7 +541,7 @@
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(225, 95);
-            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "КП датчика";
             // 
@@ -573,7 +573,6 @@
             this.BSensitivityCopy.Name = "BSensitivityCopy";
             this.BSensitivityCopy.Size = new System.Drawing.Size(76, 22);
             this.BSensitivityCopy.TabIndex = 13;
-            this.BSensitivityCopy.TabStop = false;
             this.BSensitivityCopy.Text = "Копировать";
             this.BSensitivityCopy.UseVisualStyleBackColor = true;
             this.BSensitivityCopy.Click += new System.EventHandler(this.BSensitivityCopy_Click);
@@ -583,7 +582,7 @@
             this.TSensitivity.Location = new System.Drawing.Point(31, 19);
             this.TSensitivity.Name = "TSensitivity";
             this.TSensitivity.Size = new System.Drawing.Size(86, 20);
-            this.TSensitivity.TabIndex = 1;
+            this.TSensitivity.TabIndex = 12;
             this.TSensitivity.Text = "100";
             this.TSensitivity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TSensitivity_KeyPress_1);
             this.TSensitivity.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TSensitivity_KeyUp);
@@ -607,6 +606,7 @@
             this.radSensitivityG.Name = "radSensitivityG";
             this.radSensitivityG.Size = new System.Drawing.Size(51, 17);
             this.radSensitivityG.TabIndex = 10;
+            this.radSensitivityG.TabStop = true;
             this.radSensitivityG.Text = "мВ/g";
             this.radSensitivityG.UseVisualStyleBackColor = true;
             this.radSensitivityG.CheckedChanged += new System.EventHandler(this.radSensitivityG_CheckedChanged);
@@ -619,8 +619,8 @@
             this.groupBox3.Controls.Add(this.BFrequencyCopy);
             this.groupBox3.Location = new System.Drawing.Point(247, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 95);
-            this.groupBox3.TabIndex = 2;
+            this.groupBox3.Size = new System.Drawing.Size(200, 72);
+            this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Частота, Гц";
             // 
@@ -643,6 +643,7 @@
             this.radFrequencyHw.Name = "radFrequencyHw";
             this.radFrequencyHw.Size = new System.Drawing.Size(37, 17);
             this.radFrequencyHw.TabIndex = 9;
+            this.radFrequencyHw.TabStop = true;
             this.radFrequencyHw.Text = "Гц";
             this.radFrequencyHw.UseVisualStyleBackColor = true;
             this.radFrequencyHw.CheckedChanged += new System.EventHandler(this.radFrequencyHw_CheckedChanged);
@@ -654,7 +655,7 @@
             this.groupBox4.Controls.Add(this.radVoltageRMS);
             this.groupBox4.Controls.Add(this.TVoltage);
             this.groupBox4.Controls.Add(this.button9);
-            this.groupBox4.Location = new System.Drawing.Point(453, 57);
+            this.groupBox4.Location = new System.Drawing.Point(453, 68);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(188, 72);
             this.groupBox4.TabIndex = 11;
@@ -714,9 +715,9 @@
             this.groupBox8.Controls.Add(this.channelWidth);
             this.groupBox8.Controls.Add(this.channelCount);
             this.groupBox8.Controls.Add(this.boundaryFrequency);
-            this.groupBox8.Location = new System.Drawing.Point(453, 184);
+            this.groupBox8.Location = new System.Drawing.Point(453, 198);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(210, 195);
+            this.groupBox8.Size = new System.Drawing.Size(210, 181);
             this.groupBox8.TabIndex = 12;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Автоспектры";
@@ -724,7 +725,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(9, 153);
+            this.label9.Location = new System.Drawing.Point(11, 142);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(37, 13);
             this.label9.TabIndex = 19;
@@ -733,7 +734,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 127);
+            this.label7.Location = new System.Drawing.Point(10, 116);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 13);
             this.label7.TabIndex = 18;
@@ -742,7 +743,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(121, 150);
+            this.button7.Location = new System.Drawing.Point(123, 139);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(76, 22);
             this.button7.TabIndex = 17;
@@ -752,7 +753,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(121, 122);
+            this.button4.Location = new System.Drawing.Point(123, 111);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(76, 22);
             this.button4.TabIndex = 16;
@@ -762,7 +763,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(121, 79);
+            this.button3.Location = new System.Drawing.Point(123, 68);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(76, 22);
             this.button3.TabIndex = 15;
@@ -772,7 +773,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(121, 53);
+            this.button2.Location = new System.Drawing.Point(123, 42);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 22);
             this.button2.TabIndex = 14;
@@ -782,7 +783,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(121, 25);
+            this.button1.Location = new System.Drawing.Point(123, 14);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 22);
             this.button1.TabIndex = 13;
@@ -792,7 +793,7 @@
             // 
             // channelCenter2
             // 
-            this.channelCenter2.Location = new System.Drawing.Point(52, 150);
+            this.channelCenter2.Location = new System.Drawing.Point(54, 139);
             this.channelCenter2.Name = "channelCenter2";
             this.channelCenter2.ReadOnly = true;
             this.channelCenter2.Size = new System.Drawing.Size(63, 20);
@@ -802,7 +803,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 108);
+            this.label5.Location = new System.Drawing.Point(23, 97);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(151, 13);
             this.label5.TabIndex = 11;
@@ -810,7 +811,7 @@
             // 
             // channelCenter1
             // 
-            this.channelCenter1.Location = new System.Drawing.Point(52, 124);
+            this.channelCenter1.Location = new System.Drawing.Point(54, 113);
             this.channelCenter1.Name = "channelCenter1";
             this.channelCenter1.ReadOnly = true;
             this.channelCenter1.Size = new System.Drawing.Size(63, 20);
@@ -819,7 +820,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 82);
+            this.label3.Location = new System.Drawing.Point(14, 71);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 9;
@@ -828,7 +829,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1, 58);
+            this.label2.Location = new System.Drawing.Point(3, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 9;
@@ -838,7 +839,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 30);
+            this.label1.Location = new System.Drawing.Point(12, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 9;
@@ -846,7 +847,7 @@
             // 
             // channelWidth
             // 
-            this.channelWidth.Location = new System.Drawing.Point(52, 79);
+            this.channelWidth.Location = new System.Drawing.Point(54, 68);
             this.channelWidth.Name = "channelWidth";
             this.channelWidth.ReadOnly = true;
             this.channelWidth.Size = new System.Drawing.Size(63, 20);
@@ -854,7 +855,7 @@
             // 
             // channelCount
             // 
-            this.channelCount.Location = new System.Drawing.Point(52, 53);
+            this.channelCount.Location = new System.Drawing.Point(54, 42);
             this.channelCount.Name = "channelCount";
             this.channelCount.Size = new System.Drawing.Size(63, 20);
             this.channelCount.TabIndex = 8;
@@ -865,7 +866,7 @@
             // 
             // boundaryFrequency
             // 
-            this.boundaryFrequency.Location = new System.Drawing.Point(52, 27);
+            this.boundaryFrequency.Location = new System.Drawing.Point(54, 16);
             this.boundaryFrequency.Name = "boundaryFrequency";
             this.boundaryFrequency.Size = new System.Drawing.Size(63, 20);
             this.boundaryFrequency.TabIndex = 8;
@@ -879,7 +880,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 393);
+            this.ClientSize = new System.Drawing.Size(679, 420);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -890,7 +891,7 @@
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Пересчет параметров ГАРМОНИЧЕСКОЙ вибрации!!!";
+            this.Text = "Пересчет параметров ГАРМАНИЧЕСКОЙ вибрации!!!";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
